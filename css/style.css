@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#clock{
+    font-weight: 300;
+    font-size: 100px;
+}
+
+.clock-frame{
+    height: 360px;
+    align-self: center;
+    width : 360px;
+    background-color: rebredeccapurple;
+    border: black ;
+    border: 10px inset;
+    border-radius: 80%;
+    padding:2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face{
+    height: 100%;
+    width : 100%;
+    display: flex;
+    align-content: center;
+    box-shadow: 20px;
+    background-color: white;
+    border-radius: 80%; 
+    border-style: dotted;
+    position:relative;
+}
+
+.clock-pin {
+    top: 47%;
+    left: 45%;
+    height: 8%;
+    width: 8%;
+    border-radius: 80%;
+    position: relative;
+    background-color: white;
+}
+
+.hours-hand {
+    width: 45%;
+    height: 12px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transition: all 0.05s;
+    left: 4%;
+    border-radius: 98%;
+}
+
+.minutes-hand {
+    width: 45%;
+    height: 5px;
+    background: darkblue;
+    border : 2px inset black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transition: all 0.05s;
+    left: 4%;
+    border-radius: 98%;
+}
+
+.seconds-hand {
+    width: 48%;
+    height: 1px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transition: all 0.05s;
+}
+
+.panel
+{
+    background : whitesmoke;
+    border-style: groove;
+    width:50%;
+    margin:10px;
+
+}
